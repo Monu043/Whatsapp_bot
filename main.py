@@ -52,16 +52,41 @@ HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 
 # Minimal list of reliable sources (you can add more)
 SOURCES = [
-    ("RojgarResult", "https://www.rojgarresult.com/latestjob.php"),
-    ("SarkariResult", "https://www.sarkariresult.com/"),
-    ("FreeJobAlert", "https://www.freejobalert.com/"),
-    ("DRDO", "https://www.drdo.gov.in/careers"),
-    ("ISRO", "https://www.isro.gov.in/careers"),
-    ("BHEL", "https://www.bhel.com/careers"),
-    ("BEL", "https://bel-india.in/career/"),
-    ("ECIL", "https://www.ecil.co.in/careers.php"),
-    ("NIC", "https://www.nic.in/careers/"),
-    ("NIELIT", "https://nielit.gov.in/content/careers"),
+    # FreeJobAlert (very stable)
+    ("FJA-ENGG", "https://www.freejobalert.com/engineering-jobs/"),
+    ("FJA-PSU", "https://www.freejobalert.com/psu-jobs/"),
+    ("FJA-GRAD", "https://www.freejobalert.com/any-degree-jobs/"),
+    ("FJA-BTECH", "https://www.freejobalert.com/b-tech-jobs/"),
+
+    # Sarkari Job Find (bot friendly)
+    ("SJF-LATEST", "https://www.sarkarijobfind.com/latest-job/"),
+    ("SJF-BTECH", "https://www.sarkarijobfind.com/b-tech-jobs/"),
+    ("SJF-GRAD", "https://www.sarkarijobfind.com/graduation-jobs/"),
+
+    # Naukri360
+    ("N360-LATEST", "https://www.naukri360.xyz/latest-jobs/"),
+    ("N360-ENGG", "https://www.naukri360.xyz/engineering-jobs/"),
+
+    # Employment News RSS
+    ("EMPNEWS", "https://employmentnews.gov.in/newweb/rvarss.aspx"),
+
+    # MyGov RSS
+    ("MYGOV", "https://www.mygov.in/rss/"),
+
+    # DRDO, ISRO, PSU Engineering
+    ("DRDO", "https://rac.gov.in/latestrecruitment"),
+    ("ISRO", "https://www.isro.gov.in/Careers.html"),
+    ("BEL", "https://bel-india.in/LatestNews"),
+    ("BHEL", "https://www.bhel.com/notice-listing"),
+    ("ECIL", "https://www.ecil.co.in/job_details.php"),
+
+    # NIC / NIELIT
+    ("NIELIT", "https://www.nielit.gov.in/recruitments"),
+    ("NIC", "https://recruitment.nic.in/"),
+
+    # SSC & UPSC
+    ("SSC", "https://ssc.nic.in/whatsnew"),
+    ("UPSC", "https://www.upsc.gov.in/whats-new"),
 ]
 
 # ---------- UTILS ----------
